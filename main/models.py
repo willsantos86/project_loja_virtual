@@ -28,7 +28,7 @@ class Produto(models.Model):
     descricao = models.TextField(blank=True)
     preco = models.DecimalField(max_digits=10, decimal_places=2)
     disponivel = models.BooleanField(default=True)
-    #estoque = models.PositiveIntegerField()
+    estoque = models.PositiveIntegerField()
     data_criacao = models.DateTimeField(auto_now_add=True)
     data_ultima_atualizacao = models.DateTimeField(auto_now_add=True)
     
